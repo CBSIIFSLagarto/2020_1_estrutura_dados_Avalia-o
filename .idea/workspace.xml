@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3ae2f73-2863-4ae1-b8c1-2a5b03387eff" name="Default Changelist" comment="" />
+    <list default="true" id="d3ae2f73-2863-4ae1-b8c1-2a5b03387eff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fila/main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaCheiaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaCheiaException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaInteirosInfinita.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaInteirosInfinita.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaSequencial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaSequencial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaVaziaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila-master/Fila/FilaVaziaException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Fila-master/Fila/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Fila-master/Fila/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/FilaCheiaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/FilaCheiaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/FilaInteiros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/FilaInteiros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/FilaInteirosInfinita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/FilaInteirosInfinita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/FilaSequencial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/FilaSequencial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/FilaVaziaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/FilaVaziaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fila/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fila/main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +28,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jTLLTpOQLYSfflihu8O3hyPO6C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,10 +48,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fila.main" />
+      <module name="Fila-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Fila.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fila.main2" />
       <module name="Fila-master" />
       <extension name="coverage">
         <pattern>
@@ -46,6 +80,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
+        <item itemvalue="Application.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -63,25 +98,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1603830968471">
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1603832434148">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603832434148" />
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1603853014615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="26" key="GridCell.Tab.0.bottom/0.0.1440.847@0.0.1440.847" timestamp="1603824279502" />
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603830968471" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1603830968469">
+    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603853014615" />
+    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1603853014613">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="26" key="GridCell.Tab.0.center/0.0.1440.847@0.0.1440.847" timestamp="1603824279500" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603830968469" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1603830968468">
+    <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603853014613" />
+    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1603853014612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="26" key="GridCell.Tab.0.left/0.0.1440.847@0.0.1440.847" timestamp="1603824279498" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603830968468" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1603830968470">
+    <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603853014612" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1603853014614">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="26" key="GridCell.Tab.0.right/0.0.1440.847@0.0.1440.847" timestamp="1603824279501" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603830968470" />
+    <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603853014614" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1603891882390">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1603891882390" />
   </component>
 </project>

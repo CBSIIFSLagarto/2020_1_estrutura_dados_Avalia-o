@@ -1,77 +1,67 @@
 package Fila;
-
-public class FilaInteirosInfinita {
-
-    private Caixa inicio;
-    private int qtd=0;
+public class FilaInteirosInfinita extends FilaSequencial<Integer> {
+    private Integer[] dados;
 
     public FilaInteirosInfinita() {
-        this.inicio = null;
+        super(Integer.class);
+        this.dados = (Integer[]) java.lang.reflect.Array.newInstance(Integer.class, this.getMax());
     }
 
-    //==============================================================
-
-    public void incluir(int valor) {
-        Caixa nova = new Caixa();
-        nova.setValor(valor);
-        nova.setProximo(null);
-        qtd++;
-        if (inicio == null) {
-            inicio = nova;
-        } else {
-            Caixa aux;
-            aux = inicio;
-            while (aux.getProximo() != null) {
-                aux = aux.getProximo();
-            }
-            aux.setProximo(nova);
+    @Override
+    public void incluir(Integer valor) {
+        if (this.getQtd() == this.getQtdMaxSuportada()) { // Vetor em sua capacidade máxima?
+            this.aumentarCapacidade(); // método que dobra a quantidade do vetor.
         }
+
+        this.setFim(this.getFim() + 1); // incremento
+        this.dados[this.getFim()] = valor;
+
     }
 
-    //==============================================================
+    @Override
+    public Integer remover() throws FilaVaziaException{
 
-    public int remover() throws FilaVaziaException {
-        if (inicio != null) {
-            Caixa aux = inicio;
-            int valor = aux.getValor();
-            inicio = aux.getProximo();
-            qtd--;
-            return valor;
-        } else {
-            throw new FilaVaziaException();
-        }
-    }
-
-    //==============================================================
-
-    public int getQtd(){
-        return qtd;
-    }
-
-    //==============================================================
-
-    public int visualizarProximo() throws FilaVaziaException {
         if (estaVazia()) {
             throw new FilaVaziaException();
-        }else{
-            Caixa aux = inicio;
-            return aux.getValor();
         }
+
+        Integer dadoRemovido = this.dados[0];
+
+        int indice;
+        for (indice = 0; indice < this.getFim(); indice++) {
+            this.dados[indice] = this.dados[indice + 1];
+        }
+
+        this.dados[indice] = null;
+        this.setFim(this.getFim() - 1);
+
+        return dadoRemovido;
     }
 
-    //==============================================================
+    // Estamos aumentando a capacidade da fila 2x.
+    private void aumentarCapacidade() {
+        this.setMax(this.getMax() * 2);
+        Integer[] temporario = (Integer[]) java.lang.reflect.Array.newInstance(Integer.class, this.getMax());
+        for (int indice = 0; indice <= this.getFim(); indice++) {
+            temporario[indice] = this.dados[indice];
+        }
 
-    public void limpar(){
-        this.inicio = null;
-        qtd=0;
+        // Agora que temos um temporário com tamanho maior, o que fazemos é atribuir de novo para this.dados
+        this.dados = temporario;
     }
 
-    //==============================================================
-
-    public boolean estaVazia() {
-        return this.inicio == null;
+    public Integer visualizarProximo() throws FilaVaziaException {
+        if (estaVazia()) {
+            throw new FilaVaziaException();
+        }
+        return this.dados[0]; // @return o próximo da fila.
     }
 
-    //==============================================================
+    public void limpar() {
+        for (int indice = 0; indice < this.getQtd(); indice++) {
+            this.dados[indice] = null; // removendo todos os elementos, atribuindo null.
+        }
 
+        this.setFim(-1);
+    }
 }
